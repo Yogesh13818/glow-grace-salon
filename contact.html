@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Contact | Glow & Grace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#fafafb] text-[#0e0d12] font-['DM_Sans']">
+    <header
+      class="sticky top-0 z-50 border-b border-[#0e0d12]/10 bg-[#fafafb]/90 backdrop-blur-xl"
+    >
+      <nav
+        class="mx-auto flex max-w-[1280px] items-center justify-between px-5 py-5 md:px-8"
+      >
+        <a
+          href="index.html"
+          class="font-['Playfair_Display'] text-[25px] font-bold"
+          >Glow<span class="text-[#796ca1]">&</span>Grace</a
+        >
+        <div class="hidden items-center gap-8 md:flex">
+          <a
+            href="index.html"
+            class="text-sm font-semibold text-[#0e0d12]/60 hover:text-[#796ca1]"
+            >Home</a
+          ><a
+            href="services.html"
+            class="text-sm font-semibold text-[#0e0d12]/60 hover:text-[#796ca1]"
+            >Services</a
+          ><a
+            href="gallery.html"
+            class="text-sm font-semibold text-[#0e0d12]/60 hover:text-[#796ca1]"
+            >Gallery</a
+          ><a href="contact.html" class="text-sm font-semibold text-[#796ca1]"
+            >Contact</a
+          >
+        </div>
+        <a
+          href="contact.html"
+          class="rounded-full  border-[#796ca1] px-4 py-2 text-xs font-bold text-[#796ca1] hover:bg-[#796ca1] hover:text-white"
+          ></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="mx-auto max-w-[1280px] px-5 pb-14 pt-16 md:px-8 md:pt-24">
+        <p class="mb-4 text-[11px] font-bold tracking-[2px] text-[#796ca1]">
+          LET'S CONNECT
+        </p>
+        <h1
+          class="font-['Playfair_Display'] text-5xl font-semibold leading-tight tracking-[-2px] md:text-7xl"
+        >
+          Your next beauty<br /><em class="text-[#796ca1]"
+            >moment starts here.</em
+          >
+        </h1>
+        <p class="mt-5 max-w-[580px] text-[#0e0d12]/60">
+          Tell us what you're looking for and we'll help you plan your visit.
+        </p>
+      </section>
+      <section class="mx-auto max-w-[1280px] px-5 pb-20 md:px-8">
+        <div class="grid gap-5 lg:grid-cols-[1.4fr_.6fr]">
+          <div
+            class="rounded-3xl border border-[#0e0d12]/10 bg-white p-7 md:p-10"
+          >
+            <p class="mb-3 text-[11px] font-bold tracking-[2px] text-[#796ca1]">
+              BOOK AN APPOINTMENT
+            </p>
+            <h2 class="font-['Playfair_Display'] text-4xl">
+              Tell us a little<br /><em class="text-[#796ca1]"
+                >about your visit.</em
+              >
+            </h2>
+            <form class="mt-8">
+              <div class="grid gap-5 md:grid-cols-2">
+                <div class="flex flex-col gap-2">
+                  <label for="name" class="text-xs font-bold">Full Name</label
+                  ><input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    required
+                    class="rounded-xl border border-[#0e0d12]/15 bg-[#fafafb] px-4 py-3 text-sm outline-none transition focus:border-[#796ca1] focus:ring-4 focus:ring-[#796ca1]/10"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="phone" class="text-xs font-bold"
+                    >Phone Number</label
+                  ><input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="+91 98765 43210"
+                    required
+                    class="rounded-xl border border-[#0e0d12]/15 bg-[#fafafb] px-4 py-3 text-sm outline-none transition focus:border-[#796ca1] focus:ring-4 focus:ring-[#796ca1]/10"
+                  />
+                </div>
+              </div>
+              <div class="mt-5 flex flex-col gap-2">
+                <label for="service" class="text-xs font-bold"
+                  >Select Service</label
+                ><select
+                  id="service"
+                  name="service"
+                  required
+                  class="rounded-xl border border-[#0e0d12]/15 bg-[#fafafb] px-4 py-3 text-sm outline-none focus:border-[#796ca1] focus:ring-4 focus:ring-[#796ca1]/10"
+                >
+                  <option value="">Choose a service</option>
+                  <option>Hair</option>
+                  <option>Skin</option>
+                  <option>Nails</option>
+                  <option>Beauty</option>
+                </select>
+              </div>
+              <div class="mt-5 flex flex-col gap-2">
+                <label for="message" class="text-xs font-bold">Message</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us what you'd like to book..."
+                  required
+                  class="resize-y rounded-xl border border-[#0e0d12]/15 bg-[#fafafb] px-4 py-3 text-sm outline-none transition focus:border-[#796ca1] focus:ring-4 focus:ring-[#796ca1]/10"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="mt-2 rounded-full bg-[#796ca1] px-6 py-4 text-sm font-bold text-white shadow-lg shadow-[#796ca1]/20 transition hover:-translate-y-1 hover:bg-[#66598d]"
+              >
+                Send Enquiry ↗
+              </button>
+            </form>
+          </div>
+          <aside
+            class="flex flex-col justify-between rounded-3xl bg-[#eeeaf5] p-7 md:p-10"
+          >
+            <div class="border-b border-[#0e0d12]/10 py-5">
+              <span class="text-[10px] font-bold tracking-[2px] text-[#796ca1]"
+                >VISIT US</span
+              >
+              <h3 class="mt-2 font-['Playfair_Display'] text-2xl">
+                C-Scheme, Jaipur
+              </h3>
+              <p class="mt-1 text-sm text-[#0e0d12]/60">
+                Rajasthan 302001<br />India
+              </p>
+            </div>
+            <div class="border-b border-[#0e0d12]/10 py-5">
+              <span class="text-[10px] font-bold tracking-[2px] text-[#796ca1]"
+                >CALL US</span
+              >
+              <h3 class="mt-2 font-['Playfair_Display'] text-2xl">
+                +91 98765 43210
+              </h3>
+              <p class="mt-1 text-sm text-[#0e0d12]/60">Tue–Sun · 10 AM–8 PM</p>
+            </div>
+            <div class="py-5">
+              <span class="text-[10px] font-bold tracking-[2px] text-[#796ca1]"
+                >HOURS</span
+              >
+              <h3 class="mt-2 font-['Playfair_Display'] text-2xl">
+                Tuesday — Sunday
+              </h3>
+              <p class="mt-1 text-sm text-[#0e0d12]/60">
+                10:00 AM — 8:00 PM<br />Monday — Closed
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="mx-auto max-w-[1280px] px-5 pb-20 md:px-8">
+        <iframe
+          title="Glow and Grace location in C-Scheme Jaipur"
+          src="https://www.google.com/maps?q=C-Scheme,Jaipur,Rajasthan&output=embed"
+          loading="lazy"
+          class="h-[350px] w-full rounded-3xl border-0 md:h-[450px]"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="border-t border-[#0e0d12]/10">
+      <div
+        class="mx-auto flex max-w-[1280px] flex-col justify-between gap-6 px-5 py-10 md:flex-row md:px-8"
+      >
+        <div>
+          <a
+            href="index.html"
+            class="font-['Playfair_Display'] text-2xl font-bold"
+            >Glow<span class="text-[#796ca1]">&</span>Grace</a
+          >
+          <p class="mt-1 text-xs text-[#0e0d12]/50">
+            Premium beauty studio · C-Scheme, Jaipur
+          </p>
+        </div>
+        <div class="text-xs text-[#0e0d12]/50">
+          <p>Tue–Sun · 10 AM–8 PM</p>
+          <p>Monday · Closed</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
